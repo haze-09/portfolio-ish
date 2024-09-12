@@ -1,2 +1,2 @@
-# template1
-my template with a webpack config and a few plugins
+# portfolio
+a portfolio website made to practice responsive web design
