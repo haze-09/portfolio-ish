@@ -1,7 +1,7 @@
 {
-  "name": "template1",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "my template with a webpack config and a few plugins",
+  "description": "a portfolio website made to practice responsive web design",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
