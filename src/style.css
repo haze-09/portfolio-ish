@@ -4,7 +4,37 @@
     font-family: "Poppins", sans-serif;
     margin: 0;
 }
+.gradient {
+    background: linear-gradient(
+      340deg,
+      hsl(237deg 100% 28%) 0%,
+      hsl(253deg 90% 32%) 3%,
+      hsl(261deg 89% 36%) 7%,
+      hsl(266deg 90% 39%) 13%,
+      hsl(271deg 92% 42%) 21%,
+      hsl(276deg 95% 44%) 30%,
+      hsl(280deg 100% 46%) 40%,
+      hsl(300deg 100% 40%) 52%,
+      hsl(315deg 100% 45%) 65%,
+      hsl(325deg 100% 49%) 77%,
+      hsl(332deg 100% 50%) 87%,
+      hsl(346deg 100% 60%) 95%,
+      hsl(0deg 97% 66%) 100%
+    );
 
+    background-attachment: fixed;
+}
+
+.shadow{
+    box-shadow: 0px 1px 13px -3px rgba(0,0,0,1);
+}
+
+
+body{
+    background-image: url("./assets/bg.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
 
 
 main{
@@ -19,6 +49,9 @@ main{
 #profile{
     width: 80%;
     object-fit: cover;
+    backdrop-filter: blur(10px);
+    border: 1rem solid rgba(226, 226, 226, 0.85);
+    border-radius: 50%;
 }
 
 
@@ -27,6 +60,11 @@ main>div{
     flex-direction: column;
     justify-content: space-between;
     gap: clamp(1rem, -2.1494rem + 6.639vw, 1.5rem);
+    backdrop-filter: blur(10px);
+    background: rgba(226, 226, 226, 0.85);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    color: rgb(21, 21, 21);
 }
 
 main>div>div{
@@ -34,3 +72,5 @@ main>div>div{
     justify-content: flex-end;
     gap: 1rem;
 }
+
+
