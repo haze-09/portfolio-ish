@@ -66,14 +66,74 @@ main > div > div {
 
 /* section styling */
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+h2 {
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+  background: rgba(226, 226, 226, 0.85);
+  border-radius: 1rem;
+  color: rgb(21, 21, 21);
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 5rem;
+  padding-left: clamp(2rem, 5vw, 5rem);
+  padding-right: clamp(2rem, 5vw, 5rem);
+}
+
+.projectImg {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.projectContainer {
+  backdrop-filter: blur(10px);
+  background: rgba(226, 226, 226, 0.85);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: rgb(21, 21, 21);
+}
+
+.top {
+  margin: 0.7rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links > a {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+span {
+  color: rgb(21, 21, 21);
+  /* margin-top: 0.38rem; */
+}
 
 @media (max-width: 375px) {
+  /* main */
   main > div > div {
     justify-content: space-between;
   }
 
-  a {
+  main > div > div > a {
     padding: 0;
   }
 
@@ -83,6 +143,23 @@ main > div > div {
   main > div > p {
     font-size: smaller;
   }
+
+  /* section */
+  h3 {
+    font-size: 1rem;
+  }
+
+  .links > a {
+    font-size: 1.2rem;
+  }
+
+  .projectDetails > p {
+    font-size: smaller;
+  }
 }
 
-
+@media (min-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
