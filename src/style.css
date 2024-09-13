@@ -158,22 +158,6 @@ h3{
   text-decoration: none;
 }
 
-p {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -webkit-text-size-adjust: 100%; /* Prevent text size adjustment */
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* Specifically disable phone number detection */
-a[href^="tel"],
-a[href^="mailto"] {
-  color: inherit; /* Inherit the normal text color */
-  text-decoration: none; /* Remove the underline */
-  font-size: inherit; /* Ensure it doesn’t enlarge */
-  pointer-events: none; /* Disable clickability if desired */
-  cursor: default;
-}
 
 @media (max-width: 375px) {
   /* main */
